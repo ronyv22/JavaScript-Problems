@@ -49,6 +49,6 @@ function countVowels(str) {
 }
 
 //Use the console log to call the countVowels function with string input 
-//"What is the number of vowels that are in this sentence?"
-//16 is count
-console.log(countVowels("What is the number of vowels that are in this sentence?"));
+//What is a man? A miserable pile of secrets!"
+//14 is count
+console.log(countVowels("What is a man? A miserable pile of secrets!"));
