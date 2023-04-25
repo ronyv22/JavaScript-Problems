@@ -5,8 +5,8 @@
 
 /* 
 step 1: define a Javascript function that accept a string as a parameter called countVowels
-step 2: split the string passed in, turning it into an array of each individual letter,
-store it into a variable called arrayOfLetters
+step 2: convert the string into lowercase letters and split the string, turning it 
+into an array of each individual letter, store it into a variable called arrayOfLetters
 step 3: define a variable called numberOfLetters and set the inital value to be equal to 0
 step 4: define a variable that defines what a vowel is in an array called, arrayOfVowels
 step 5: use a for loop to loop through the arrayOfLetters variable with an if statement
@@ -21,8 +21,9 @@ step 7: return the count of vowels within the string
 function countVowels(str) {
 
 //Declared a variable called arrayOfLetters with a split method to breakdown each word in the
-//string into an array of characters to be looped through
-	const arrayOfLetters = str.split("");
+//string into an array of characters to be looped through and a toLowerCase method to convert 
+//the string input into lowercase letters	
+	const arrayOfLetters = str.toLowerCase().split("");
 
 //Initialized a variable called numberOfLetters and set the value to 0 to be used 
 //as a starting point to store the vowels found with in the string during the loop
