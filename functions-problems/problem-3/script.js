@@ -10,14 +10,12 @@ step 4: increment the letterCount variable by 1 if it does
 step 5: return the number of the specified letters within the string input
 */
 
-//Defined the function countLetter with a string and letter so we can get amount of how many times
-//a specified letter appears in a string
-function countLetter(str,letter) {
-
-//Initialized the variable letterCount with the index value of 0 as a starting point in the loop 
-let letterCount = 0;
 
 /*
+Defined the function countLetter with a string and letter so we can get amount of how many times
+a specified letter appears in a string
+Initialized the variable letterCount with the index value of 0 as a starting point in the loop 
+
 The for loop starts by initializing the variable charPosition at 0. 
 
 Next, it checks if charPosition is less than length of the string if it is, 
@@ -28,25 +26,26 @@ The string method toLowerCase, is also used to convert the string to lowercase
 to account for any uppercase letters that are in the string.
 
 The variable letterCount will increase by 1 if the character matches the letter.
-*/
-for (let charPosition = 0; charPosition < str.length; charPosition++) {
-	if (str.toLowerCase().charAt(charPosition) == letter) {
-	letterCount += 1;
 
- }	
-}
-
-
-/*
 The return statement uses the letterCount variable which will contain the amount of times 
 the specified letter appears in the string input.  
-*/
-return letterCount;
-}
 
-
-/*
 The function countLetter returns using the input values total amount of times the letter i 
 appears in the string. 4 is the final output.
 */
+
+
+function countLetter(str,letter) {
+let letterCount = 0;
+
+ (let charPosition = 0; charPosition < str.length; charPosition++) {
+	if (str.toLowerCase().charAt(charPosition) === letter) {
+	letterCount += 1;
+ }
+
+}
+
+  return letterCount;
+}
+
 console.log(countLetter('I hope this helps. Let me know if you have any further questions.', 'i'));
