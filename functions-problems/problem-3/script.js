@@ -36,14 +36,14 @@ appears in the string. 4 is the final output.
 
 
 function countLetter(str,letter) {
-let letterCount = 0;
+  let letterCount = 0;
 
  for (let charPosition = 0; charPosition < str.length; charPosition++) {
 	if (str.toLowerCase().charAt(charPosition) === letter) {
-	letterCount += 1;
- }
+	  letterCount += 1;
+    }
 
-}
+  }
 
   return letterCount;
 }
