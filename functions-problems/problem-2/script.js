@@ -18,37 +18,37 @@ step 7: return the count of vowels within the string
 
 //Defined the function: countVowels with a string parameter to put out the amount of vowels in a
 //given string
-function countVowels(str) {
-
 //Declared a variable called arrayOfLetters with a split method to breakdown each word in the
 //string into an array of characters to be looped through and a toLowerCase method to convert 
-//the string input into lowercase letters	
-	const arrayOfLetters = str.toLowerCase().split("");
-
+//the string input into lowercase letters
 //Initialized a variable called numberOfLetters and set the value to 0 to be used 
 //as a starting point to store the vowels found with in the string during the loop
-	let numberOfLetters = 0
-
 //Defined a variable called arrayOfVowels for all the vowels that are found in the string 
-	const arrayOfVowels = ["a", "e", "i", "o", "u"];
-
 //Created a for loop that will go through every character in the string input to determine whether
 //it is a vowel or not
 //The variable i is used as an index of the current letter being checked in the string	
 //Using an if statement with the includes method to check if current letter is a vowel or not and 
 //if it is a vowel is, numberOfLetters variable is incremented by 1 
+//The return statement in the function is using the variable numberOfLetters to return 
+//the total number of vowels found within the string 
+//Use the console log to call the countVowels function with string input 
+//What is a man? A miserable pile of secrets!"
+//14 is count
+
+function countVowels(str) {
+	const arrayOfLetters = str.toLowerCase().split("");
+	let numberOfLetters = 0
+	const arrayOfVowels = ["a", "e", "i", "o", "u"];
+	
 	for(let i = 0; i < arrayOfLetters.length; i++) {
 		if(arrayOfVowels.includes(arrayOfLetters[i])) {
 			numberOfLetters += 1;
 	 }
 	}
 
-//The return statement in the function is using the variable numberOfLetters to return 
-//the total number of vowels found within the string 
+
 	return numberOfLetters;
 }
 
-//Use the console log to call the countVowels function with string input 
-//What is a man? A miserable pile of secrets!"
-//14 is count
+
 console.log(countVowels("What is a man? A miserable pile of secrets!"));
