@@ -23,12 +23,6 @@ are divisible by 3 or 5 without a remainder.
 
 The strict equality operator is used to check for type and value equality. 
 
-The if function checks that the integer is divisible by 3 or 5 is true then "Fizz" and "Buzz" is retuned 
-respectively.
-
-The && operator is used to make sure if any integers in the for loop are divisible by 3 and 5 then "FizzBuzz" 
-is returned if true.
-
 Used console log the variables i and word to the console.
 
 Execute fizzBuzz function to see result. 
@@ -49,10 +43,7 @@ function fizzBuzz(){
   	if (i % 5 === 0){
   	  word += "Buzz";	
   	}
-  	else if (i % 3 === 0 && i % 5 === 0){
-  	  word += "FizzBuzz";	
-  	}
-   
+  
 
     console.log(i, word);
   }
