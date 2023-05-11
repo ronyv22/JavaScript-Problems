@@ -15,22 +15,22 @@ step 7: return the longest word in the string
 
 
 // Initialized a function called findLongestWord to pass a string as a parameter
-
-function findLongestWord(str) {
-
 // Initialized a variable called arrayOfWords to split the string into an array of words by the space
 //	between them
-
-	const arrayOfWords = str.split(" ");
-
 // Initialized a variable called longestWord and set the value as an empty string as placeholder that 
 // equates to the value of 0. It will be used as a starting value to compare within the loop
-
-	let longestWord = "";
-
 // Initialized a for loop with an if statement to check whether the current word in arrayOfWords is
 // longer than the longestWord variable. If so, it will update the value of the longestWord to the
 // current word	
+// After the loop, the longestWord variable will be returned, containing the longest
+// word found in the string
+
+function findLongestWord(str) {
+	const arrayOfWords = str.split(" ");
+
+
+	let longestWord = "";
+
 
 	for(let i = 0; i < arrayOfWords.length; i++) {
 		if(arrayOfWords[i].length > longestWord.length) {
@@ -38,8 +38,6 @@ function findLongestWord(str) {
 		}
 	}
 
-// After the loop, the longestWord variable will be returned, containing the longest
-// word found in the string
 
 	return longestWord;
 }							
