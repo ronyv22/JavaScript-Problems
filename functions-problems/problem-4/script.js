@@ -4,32 +4,29 @@ multiples of both three and five print "fizzBuzz".*/
 
 /*
 step 1: define a function that will loop integers 1 through 100.
-step 2: declare a variable called word with an empty string.
-step 3: use an if and else if statements to check whether numbers in the loop are multiples of 3 or 5, 
-print "Fizz" or "Buzz" respectively. Print "FizzBuzz" if number is a multiple of 3 and 5. If number is not 
-a multiple of neither number than the number itself is logged.
+step 2: declare a variable called word with an empty string as a place holder.
+step 3: use an if statement to check whether numbers in the loop are multiples of 3 or 5, 
+print "Fizz" or "Buzz" respectively. Print "FizzBuzz" if number is a multiple of 3 and 5. If the number is not 
+a multiple of neither number then an empty string is printed.
 step 4: Function logs the number and word if applicable.
 */
 
 
 /*
 
-Used a for loop to iterate through integers 1 to 100 in the fizzBuzz function
+Used a for loop to iterate through 1 to 100 to check if the 
+current number is divisible by 3 or 5 with no remainder
 
-Declared an empty string variable called word to create an output for each integer in the loop
+If they don't have a remainder then it means the the number is a multiple of
+ 3 or 5 respectively, which will print the word "Fizz" or "Buzz"
 
-In the if statement a comparison and modulo operator is used to determine if the integers in the for loop 
-are divisible by 3 or 5 without a remainder.
+If number the current number in the loop is a multiple of both 3 and 5
+the word "FizzBuzz" will be printed
 
-The strict equality operator is used to check for type and value equality. 
+Every other number that is not a multple of 3 or 5 will print an empty string
 
-Used console log the variables i and word to the console.
-
-Execute fizzBuzz function to see result. 
 
 */
-
-
 
 
 function fizzBuzz(){
