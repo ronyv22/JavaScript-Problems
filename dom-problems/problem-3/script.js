@@ -6,7 +6,7 @@ number of items and displays the item in the list when you select from the dropd
 /*
 html
 Step 1 Create an html page with a dropdown list with options in it.
-Step 2 Add an id attribute and an onchange event that will be used for when the function is called.
+Step 2 Add an id attribute and an onchange event where the function will be used when called.
 Step 3 Add a p element with id attribute to print function result.
 Step 4 Add a script tag that will use the javascript file where the function is located.
 
@@ -14,9 +14,9 @@ Step 4 Add a script tag that will use the javascript file where the function is 
 
 javascript
 Step 1 Define a function.
-Step 2 Declare a variable that will use the id attribute of the dropdown list.
+Step 2 Declare a variable that will use the id attribute of the dropdown list from the html.
 Step 3 Declare a variable to store the selected options into an array.
-Step 4 Declare a for loop through the dropdown list.
+Step 4 Declare a for loop through the dropdown array.
 Step 5 Declare a variable to print the textcontent on to the p element. 
 */
 
