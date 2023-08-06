@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>DOM: Problem 3</title>
+  </head>
+
+  <body>
+     <h1>Dropdown Menu Select</h1>
+
+     <!-- A Label is made for the drop-down list-->
+
+     <!--Created a drop-down list so that the function will be called everytime an option is selected from the drop-down-->
+
+     <!--Added an id attribute in the select tag so that the javascript function will be retrieved by its id -->
+
+     <label for="shape-names"> 2D Geometry Shape Selection:</label>
+        <select name="shape-names" id="shape-names" onchange="displayItemSelect()">
+          <option value="circle">Circle</option>
+          <option value="triangle">Triangle</option>
+          <option value="square">Square</option>
+        </select>
+    
+      <!--Added a p element with an id attribute that will print the result of the function -->  
+      
+      <p id="itemDisplayResult"></p> 
+
+      <!--Used a script tag that will refer to the javascript file the function is stored in-->
+
+      <script src="script.js"></script>
+
+  </body>
+
+</html>
