@@ -27,26 +27,20 @@ First, I defined the function that will be called when a selection from the drop
 
 I did this by first declaring a variable and assigned it the select element by the id attribute retrieved from the html file using the getElementById method.
 
-Next, I declared a variable and assigned an empty array to store the selected options from the dropdown list.
+Next, I declared a variable and assigned it to the value of the selected option.
 
-After that, I used a for loop to check if the current option is selected and if it is, it retrieves
-the text of the selected option and adds it to the selectedItem array using the push method.
+After that, I declared another variable, using the selectedIndex and text properties to get the corresponding text of the of the selected option.
 
 Finally, I declared another variable which will update the result onto the p element by retrieving its id from the html file and
-using the textContent to return the number of items as well as the selected item from the array into a string.
+using the textContent property to return the number of items as well as the selected item from the array into a string.
 
 */
 
 
 function displayItemSelect() {
   const dropdown = document.getElementById("shape-names");
-  const selectedItem = [];
-
-  for (let i = 0; i < dropdown.options.length; i++) {
-    if (dropdown.options[i].selected) {
-      selectedItem.push(dropdown.options[i].text);
-    }
-  }
+  const selectedItem = dropdown.value;
+  const selectedText = dropdown.options[dropdown.selectedIndex].text;
 
   const result = document.getElementById("itemDisplayResult");
   result.textContent = "Number of items: " + dropdown.options.length + ", Selected item: " + selectedItem;
