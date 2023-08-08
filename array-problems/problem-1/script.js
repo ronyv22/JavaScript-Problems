@@ -54,7 +54,7 @@ function getFirstArrayElements(arr, n) {
    return arr.slice(0, n);
 }
 
-   console.log(result);												 //returns [ 'Sony', 'Apple' ]	
+   console.log(result);			                             //returns [ 'Sony', 'Apple' ]	
    console.log(getFirstArrayElements(consumerElectronics, -2));      //returns Your input should be a positive number. Try again.                              
    console.log(getFirstArrayElements(consumerElectronics,20));       //returns The number of elements to return is greater than: 10, Try again.
    console.log(getFirstArrayElements(consumerElectronics,'Ten'));    //returns Second argument is not a valid number. Please try again.
