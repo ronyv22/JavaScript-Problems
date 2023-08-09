@@ -16,22 +16,22 @@ Step 4 Use the slice method to extract the specfied number and elements of the a
 
 
 /*
-	First, I declared a variable, consumerElectronics and assigned it to an array which is storing various electonic name brands in it.
 
-	Second, I declared another variable, this time assigning it to the function, getFirstArrayElements with 2 arguments
-	the array that we stored the brand names into and the specified number element that will call the corresponding elements from the array.
+First, I declared a variable, consumerElectronics and assigned it to an array which is storing various electonic name brands in it.
 
-	Next, defined the function with the two parameters, an array and number that will check if the the number is less than and or equal
-	to 0. If so, the function will return an error message indicating that the number must be a positive number. 
+Second, I declared another variable, this time assigning it to the function, getFirstArrayElements with 2 arguments
+the array that we stored the brand names into and the specified number element that will call the corresponding elements from the array.
 
-	I also added some additional if statements with error messages for invalid inputs. One to check if the number entered in the function argument exceeds the array's length
-	and one to print if the second argument is a not a number.
+Next, defined the function with the two parameters, an array and number that will check if the the number is less than and or equal
+to 0. If so, the function will return an error message indicating that the number must be a positive number. 
 
-        Also, I used the slice method to extract and return the first number elements of the array into a new one if none of those previous conditions are met.
+I also added some additional if statements with error messages for invalid inputs. One to check if the number entered in the function argument exceeds the array's length
+and one to print if the second argument is a not a number.
+
+Also, I used the slice method to extract and return the first number elements of the array into a new one if none of those previous conditions are met.
 
 
-	Finally, I used the console.log to print out the various massages from the function based on input errors. 
-
+Finally, I used the console.log to print out the various massages from the function based on input errors. 
 
 */
 
@@ -41,21 +41,21 @@ const result = getFirstArrayElements(consumerElectronics, 2);
 
 function getFirstArrayElements(arr, n) {
     if ( n <= 0) {
-    return "Your input should be a positive number. Try again.";
-  	}
+      return "Your input should be a positive number. Try again.";
+    }
   
-  	if ( n > arr.length) {
-  	return "The number of elements to return is greater than: " + arr.length + ",Try again.";	
-  	}
+    if ( n > arr.length) {
+      return "The number of elements to return is greater than: " + arr.length + ",Try again.";	
+    }
 
-  	if (isNaN(n)) {
-  	return "Second argument is not a valid number. Please try again.";	
-  	}
+    if (isNaN(n)) {
+      return "Second argument is not a valid number. Please try again.";	
+    }
 
-   return arr.slice(0, n);
-}
+      return arr.slice(0, n);
+    }
 
-   console.log(result);			                             //returns [ 'Sony', 'Apple' ]	
-   console.log(getFirstArrayElements(consumerElectronics, -2));      //returns Your input should be a positive number. Try again.                              
-   console.log(getFirstArrayElements(consumerElectronics,20));       //returns The number of elements to return is greater than: 10, Try again.
-   console.log(getFirstArrayElements(consumerElectronics,'Ten'));    //returns Second argument is not a valid number. Please try again.
+console.log(result);			                             //returns [ 'Sony', 'Apple' ]	
+console.log(getFirstArrayElements(consumerElectronics, -2));      //returns Your input should be a positive number. Try again.                              
+console.log(getFirstArrayElements(consumerElectronics,20));       //returns The number of elements to return is greater than: 10, Try again.
+console.log(getFirstArrayElements(consumerElectronics,'Ten'));    //returns Second argument is not a valid number. Please try again.
