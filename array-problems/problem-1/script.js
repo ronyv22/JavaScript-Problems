@@ -2,11 +2,11 @@
 
 /*
 
-Step 1 Declare a variable and assign it to values that will put into an array.
+Step 1 Declare a variable and assign it to values that will be put into an array.
 
 Step 2 Declare a variable and assign it to the function.
 
-Step 3 Define the function with two parameters,( array, number) and an if statement and a return statement put
+Step 3 Define the function with two parameters,( array, number) and an if statement and a return statement to be put
  	   into a new array.
 
 Step 4 Use the slice method to extract the specfied number and elements of the array to put into new array.	    
@@ -27,7 +27,7 @@ Step 4 Use the slice method to extract the specfied number and elements of the a
 	I also added some additional if statements with error messages for invalid inputs. One to check if the number entered in the function argument exceeds the array's length
 	and one to print if the second argument is a not a number.
 
-	Also, I used the slice method to extract and return the selected elements from the array via number into a new array.
+	Also, I used the slice method to extract and return the first number elements of the array into a new one if none of those previous conditions are met.
 
 	Finally, I used the console.log to print out the various massages from the function based on input errors. 
 
