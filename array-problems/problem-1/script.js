@@ -27,7 +27,11 @@ Step 4 Use the slice method to extract the specfied number and elements of the a
 	I also added some additional if statements with error messages for invalid inputs. One to check if the number entered in the function argument exceeds the array's length
 	and one to print if the second argument is a not a number.
 
+
 	Also, I used the slice method to extract and return the first number elements of the array into a new one if none of those previous conditions are met.
+
+    Also, I used the slice method to extract and return the first number elements of the array into a new one if none of those previous conditions are met.
+
 
 	Finally, I used the console.log to print out the various massages from the function based on input errors. 
 
@@ -38,23 +42,27 @@ Step 4 Use the slice method to extract the specfied number and elements of the a
 const consumerElectronics = ['Sony', 'Apple', 'Intel', 'IBM', 'LG', 'Panasonic', 'Samsung', 'Fujitsu',  'Toshiba', 'Lenovo'];
 const result = getFirstArrayElements(consumerElectronics, 2);
 
+
 function getFirstArrayElements(arr, n) {
     if ( n <= 0) {
-    return "Your input should be a positive number. Try again.";
+      return "Your input should be a positive number. Try again.";
   	}
   
   	if ( n > arr.length) {
-  	return "The number of elements to return is greater than: " + arr.length + ",Try again.";	
+  	  return "The number of elements to return is greater than: " + arr.length + ",Try again.";	
   	}
 
   	if (isNaN(n)) {
-  	return "Second argument is not a valid number. Please try again.";	
+  	  return "Second argument is not a valid number. Please try again.";	
   	}
 
-   return arr.slice(0, n);
+
+      return arr.slice(0, n);
 }
 
-   console.log(result);												 //returns [ 'Sony', 'Apple' ]	
+
+
+   console.log(result);			                                     //returns [ 'Sony', 'Apple' ]	
    console.log(getFirstArrayElements(consumerElectronics, -2));      //returns Your input should be a positive number. Try again.                              
    console.log(getFirstArrayElements(consumerElectronics,20));       //returns The number of elements to return is greater than: 10, Try again.
    console.log(getFirstArrayElements(consumerElectronics,'Ten'));    //returns Second argument is not a valid number. Please try again.
