@@ -47,4 +47,4 @@ function removeProperty(obj, prop) {
 }
 
 
-console.log(removeProperty(graphicCard, "memory type")); // Expected output: { brand: "NVIDIA", product name: "GeForce RTX 4080", 'ram': "12 gigabytes", year: "2030" }
+console.log(removeProperty(graphicCard, "memory type")); // Expected output: { brand: "NVIDIA", product name: "GeForce RTX 4080", 'ram': "12 gigabytes", year: "2023" }
