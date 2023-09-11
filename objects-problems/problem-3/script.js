@@ -7,7 +7,7 @@ Step 1  Define an object with three items in it.
 
 Step 2  Define a function with an object as a parameter.
 
-Step 3  Use Object.keys method to get the length of the object properties.
+Step 3  Use Object.keys method to get the length of the object property keys.
 
 Step 4  Log the function with the object as an argument into the console.
 
