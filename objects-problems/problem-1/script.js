@@ -14,7 +14,7 @@ Step 4 Use return statement to stop the function and return the object without t
 
 /*
 
- First, I defined an object called car and put several properties with key and value pairs (object literal) describing some attributes of a vehicle.
+ First, I defined an object called graphicsCard and put several properties with key and value pairs (object literal) describing some attributes of the card.
 
  Next, I defined a function called removeProperty with an object and property as parameters which will be used to to remove the 
  specified property when the function is called.
@@ -42,7 +42,7 @@ const graphicCard = {
 
 
 function removeProperty(obj, prop) {
-	delete obj[prop];
+	delete obj['prop'];
 	return obj;
 }
 
