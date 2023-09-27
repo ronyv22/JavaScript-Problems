@@ -65,8 +65,8 @@ const people = [
 ];
 
 
-function displayFullName(person) {
-	const fullName = person.firstName + ' ' + person.lastName;
+function displayFullName(people) {
+	const fullName = people.firstName + ' ' + people.lastName;
 	console.log(fullName);
 }
 
