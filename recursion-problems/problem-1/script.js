@@ -2,7 +2,7 @@
 
 
 /* 
-   Step 1 Define a function to calculate the sprcified factorial number.
+   Step 1 Define a function to calculate the specified factorial number.
 
    Step 2 Make a base case (stopping condition) with an if statement for factorial.
 
